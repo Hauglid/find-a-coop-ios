@@ -13,6 +13,10 @@
 		34913451292D3F5C00AED999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3491344F292D3F5C00AED999 /* Main.storyboard */; };
 		34913453292D3F5C00AED999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34913452292D3F5C00AED999 /* Assets.xcassets */; };
 		34913456292D3F5C00AED999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34913454292D3F5C00AED999 /* LaunchScreen.storyboard */; };
+		34913464292D438B00AED999 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34913463292D438B00AED999 /* HttpService.swift */; };
+		34913469292D44EE00AED999 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34913468292D44EE00AED999 /* Store.swift */; };
+		3491346B292D472300AED999 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491346A292D472300AED999 /* OpeningHours.swift */; };
+		3491346E292D479C00AED999 /* StoresInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491346D292D479C00AED999 /* StoresInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		34913452292D3F5C00AED999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34913455292D3F5C00AED999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34913457292D3F5C00AED999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34913463292D438B00AED999 /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		34913468292D44EE00AED999 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3491346A292D472300AED999 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		3491346D292D479C00AED999 /* StoresInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		34913448292D3F5C00AED999 /* Find A Coop */ = {
 			isa = PBXGroup;
 			children = (
+				34913462292D430700AED999 /* Utils */,
+				34913461292D42F800AED999 /* Services */,
+				3491345E292D421A00AED999 /* Features */,
+				3491345D292D420400AED999 /* Core */,
 				34913449292D3F5C00AED999 /* AppDelegate.swift */,
 				3491344B292D3F5C00AED999 /* SceneDelegate.swift */,
 				3491344D292D3F5C00AED999 /* ViewController.swift */,
@@ -65,6 +77,78 @@
 				34913457292D3F5C00AED999 /* Info.plist */,
 			);
 			path = "Find A Coop";
+			sourceTree = "<group>";
+		};
+		3491345D292D420400AED999 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3491345E292D421A00AED999 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				34913465292D43EA00AED999 /* Stores */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3491345F292D428200AED999 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		34913460292D42DD00AED999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34913468292D44EE00AED999 /* Store.swift */,
+				3491346A292D472300AED999 /* OpeningHours.swift */,
+				3491346D292D479C00AED999 /* StoresInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34913461292D42F800AED999 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				34913463292D438B00AED999 /* HttpService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		34913462292D430700AED999 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		34913465292D43EA00AED999 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				34913460292D42DD00AED999 /* Models */,
+				34913467292D44CB00AED999 /* Presentation */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		34913466292D441600AED999 /* StoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoreInfo;
+			sourceTree = "<group>";
+		};
+		34913467292D44CB00AED999 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3491345F292D428200AED999 /* Search */,
+				34913466292D441600AED999 /* StoreInfo */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34913469292D44EE00AED999 /* Store.swift in Sources */,
 				3491344E292D3F5C00AED999 /* ViewController.swift in Sources */,
+				3491346E292D479C00AED999 /* StoresInfo.swift in Sources */,
+				34913464292D438B00AED999 /* HttpService.swift in Sources */,
 				3491344A292D3F5C00AED999 /* AppDelegate.swift in Sources */,
+				3491346B292D472300AED999 /* OpeningHours.swift in Sources */,
 				3491344C292D3F5C00AED999 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
