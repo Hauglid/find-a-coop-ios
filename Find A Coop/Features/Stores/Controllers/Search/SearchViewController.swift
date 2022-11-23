@@ -32,7 +32,7 @@ class SearchViewController: UIViewController{
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
-        
+        self.title = "Find A Coop"
         loadStores()
     }
     @IBOutlet weak var searchBar: UISearchBar!
@@ -89,6 +89,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stores.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let store = stores[indexPath.row]
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "StoreInfoViewController") as! StoreInfoViewController
+        vc.store = store
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

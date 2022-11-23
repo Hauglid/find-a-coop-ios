@@ -19,6 +19,7 @@
 		34913473292D4BE300AED999 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34913472292D4BE200AED999 /* SearchViewController.swift */; };
 		34913478292D5D0900AED999 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34913477292D5D0900AED999 /* StoreTableViewCell.swift */; };
 		3491347A292D6FEB00AED999 /* SearchViewLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34913479292D6FEB00AED999 /* SearchViewLogicController.swift */; };
+		3491347C292E24E000AED999 /* StoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491347B292E24E000AED999 /* StoreInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		34913472292D4BE200AED999 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		34913477292D5D0900AED999 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		34913479292D6FEB00AED999 /* SearchViewLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewLogicController.swift; sourceTree = "<group>"; };
+		3491347B292E24E000AED999 /* StoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +120,6 @@
 		34913465292D43EA00AED999 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				34913474292D5C7B00AED999 /* Views */,
 				3491346F292D49C800AED999 /* Api */,
 				34913460292D42DD00AED999 /* Models */,
 				34913467292D44CB00AED999 /* Controllers */,
@@ -129,6 +130,7 @@
 		34913466292D441600AED999 /* StoreInfo */ = {
 			isa = PBXGroup;
 			children = (
+				3491347B292E24E000AED999 /* StoreInfoViewController.swift */,
 			);
 			path = StoreInfo;
 			sourceTree = "<group>";
@@ -148,13 +150,6 @@
 				34913470292D49D800AED999 /* StoresApi.swift */,
 			);
 			path = Api;
-			sourceTree = "<group>";
-		};
-		34913474292D5C7B00AED999 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +229,7 @@
 				3491346E292D479C00AED999 /* StoresInfo.swift in Sources */,
 				34913478292D5D0900AED999 /* StoreTableViewCell.swift in Sources */,
 				3491344A292D3F5C00AED999 /* AppDelegate.swift in Sources */,
+				3491347C292E24E000AED999 /* StoreInfoViewController.swift in Sources */,
 				3491346B292D472300AED999 /* OpeningHours.swift in Sources */,
 				34913471292D49D800AED999 /* StoresApi.swift in Sources */,
 				3491344C292D3F5C00AED999 /* SceneDelegate.swift in Sources */,
